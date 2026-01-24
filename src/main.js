@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import gsap from 'gsap';
+import screenImageUrl from '../public/bildschirm-foto.jpg';
 
 // --- SETUP ---
 const scene = new THREE.Scene();
@@ -58,6 +59,12 @@ scene.add(deskGroup);
 
 // --- MONITOR (Erhöht mit Ständer) ---
 const monitorGroup = new THREE.Group();
+
+// 1. Texture Loader erstellen
+const textureLoader = new THREE.TextureLoader();
+// 2. Das importierte Bild laden
+const screenTex = textureLoader.load(screenImageUrl);
+
 const mBase = new THREE.Mesh(new THREE.BoxGeometry(0.8, 0.05, 0.5), legMat);
 mBase.position.y = 0.1;
 const mStand = new THREE.Mesh(new THREE.BoxGeometry(0.15, 0.8, 0.1), legMat);
@@ -66,7 +73,12 @@ const mScreen = new THREE.Mesh(new THREE.BoxGeometry(2.4, 1.4, 0.1), legMat);
 mScreen.position.y = 1.2;
 const display = new THREE.Mesh(
     new THREE.PlaneGeometry(2.3, 1.3),
-    new THREE.MeshStandardMaterial({ color: 0x000000, emissive: 0x111111 })
+    new THREE.MeshStandardMaterial({ 
+        map: screenTex,             // Das ist der entscheidende Teil!
+        emissive: 0xffffff,         // Weißes Licht, damit das Bild leuchtet
+        emissiveIntensity: 0.1,     // Nur ganz dezent, damit es nicht blendet
+        emissiveMap: screenTex      // Das Bild selbst soll die Lichtquelle sein
+    })
 );
 display.position.set(0, 1.2, 0.06);
 display.userData = { id: "monitor" };
