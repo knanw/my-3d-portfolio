@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   // 'base' ist entscheidend für GitHub Pages. 
   // './' sorgt dafür, dass alle Pfade (Bilder, JS) relativ gefunden werden.
-  base: './', 
+  base: '/my-3d-portfolio', 
   
   server: {
     // Erlaubt den Zugriff aus dem Docker-Container heraus
