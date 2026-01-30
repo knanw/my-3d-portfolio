@@ -1,0 +1,175 @@
+/* Grund-Reset */
+body { margin: 0; }
+
+/* Dein Monitor-Container (aus den Inline-Styles) */
+#monitor-ui {
+    display: none; 
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-family: 'Segoe UI', sans-serif; 
+    pointer-events: none; 
+    color: white; 
+    background: rgba(15, 15, 15, 0.3); 
+    backdrop-filter: blur(12px); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    width: 80vw; 
+    max-width: 1000px;
+    height: 50vw;
+    max-height: 600px; 
+    overflow: hidden; 
+    z-index: 100;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Sidebar Bereich */
+.sidebar-container {
+    width: 240px; 
+    background: rgba(0, 0, 0, 0.4); 
+    height: 100%; 
+    border-right: 1px solid rgba(255, 255, 255, 0.1); 
+    display: flex; 
+    flex-direction: column; 
+    padding: 30px; 
+    float: left; 
+    pointer-events: auto;
+}
+
+/* Navigations-Buttons */
+.nav-btn { 
+    background: transparent; 
+    border: 1px solid rgba(255,255,255,0.1); 
+    color: #eee; 
+    padding: 14px; 
+    text-align: left; 
+    cursor: pointer; 
+    transition: 0.3s; 
+    border-radius: 8px; 
+    margin-bottom: 15px;
+    width: 100%;
+}
+.nav-btn:hover { 
+    background: rgba(255,255,255,0.1); 
+    transform: translateX(5px); 
+}
+
+/* Content Bereich */
+#app-content {
+    margin-left: 240px; 
+    height: 100%; 
+    padding: 40px; 
+    overflow-y: auto; 
+    pointer-events: auto; 
+    background: transparent;
+}
+
+/* DEINE PROJEKT-KACHELN (Original Style) */
+.project-tile { 
+    background: rgba(20, 20, 20, 0.9); 
+    padding: 20px; 
+    border-radius: 12px; 
+    border: 2px solid #444; 
+    transition: all 0.3s; 
+    margin-bottom: 20px;
+}
+
+/* Für die normalen Projekt-Kacheln */
+.project-tile:hover { 
+    border-color: #0077b5; 
+    transform: translateY(-5px); /* Nur ein kleiner Schubs nach oben */
+    box-shadow: 0 5px 15px rgba(0, 119, 181, 0.4);
+}
+
+/* Für die großen Kacheln (hier war der Fehler mit -50px) */
+.project-tile-large:hover {
+    transform: translateY(-5px); /* Von -50px auf -5px korrigiert */
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Die großen Kacheln aus deiner style.css */
+.project-tile-large {
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+/* Wenn die Kachel die Klasse 'active' bekommt */
+.project-tile-large.active {
+    position: fixed;
+    top: 5%; left: 5%; width: 90%; height: 90%;
+    z-index: 1000;
+    overflow-y: auto;
+    background: rgba(10, 10, 10, 0.98);
+}
+
+/* Icon Grid & Sonstiges */
+.icon-grid { display: flex; gap: 20px; font-size: 2rem; }
+.icon-grid a { color: white; transition: 0.3s; }
+.icon-grid a:hover { color: 0.5 ease; transform: scale(1.2); }
+
+/* Spezifische Farben für die Icons */
+/* GitHub - Lila */
+.icon-grid a:nth-child(1):hover { color: #4301af; }
+
+/* LinkedIn - Blau */
+.icon-grid a:nth-child(2):hover { color: #0055a5; }
+
+/* Firefox (Portfolio/Web) - Orange */
+.icon-grid a:nth-child(3):hover { color: #ff5e00; }
+
+/* E-Mail - Rot */
+.icon-grid a:nth-child(4):hover { color: #ff0000; }
+
+.project-content {
+    display: none; /* Versteckt die Details in der Übersicht */
+}
+
+
+/* Sidebar Basis */
+.sidebar {
+    width: 240px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    float: left;
+    pointer-events: auto;
+}
+
+/* Das Logo oben */
+.sidebar-logo {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
+
+/* Die Navigation */
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Der Bereich mit der Uhr */
+.sidebar-footer {
+    margin-top: auto;
+    padding-bottom: 10px;
+}
+
+#live-clock {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 119, 181, 0.5);
+    margin: 0;
+}

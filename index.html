@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>My first three.js app</title>
-    <style>
-      body { margin: 0; }
-    </style>
-  </head>
-  <body>
-	<script type="module">
-	  import * as THREE from 'three';
-	  console.log("Direkt aus dem HTML:", THREE.REVISION);
-	</script>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <script type="module" src="src/main.js"></script>
 
-	<script type="module" src="/src/main.js"></script>
-<div id="monitor-ui" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; font-family: sans-serif; pointer-events: none; color: white;">
-    <h1 style="font-size: 2rem; margin-bottom: 20px;">Willkommen</h1>
-    <div style="display: flex; gap: 20px;">
-        <button onclick="alert('About me clicked')" style="pointer-events: auto; padding: 10px 20px; cursor: pointer; background: #333; color: white; border: 1px solid white;">About</button>
-        <button onclick="alert('Projects clicked')" style="pointer-events: auto; padding: 10px 20px; cursor: pointer; background: #333; color: white; border: 1px solid white;">Projects</button>
-    </div>
+    <div id="monitor-ui">
+    <aside class="sidebar">
+        <h2 class="sidebar-logo">OS_TERMINAL</h2>
+        <nav class="sidebar-nav">
+            <button class="nav-btn" onclick="renderAppContent('about')">👤 About Me</button>
+            <button class="nav-btn" onclick="renderAppContent('projects')">🚀 Projects</button>
+            <button class="nav-btn" onclick="renderAppContent('contact')">✉️ Contact</button>
+        </nav>
+        <div class="sidebar-footer">
+            <p id="live-clock">00:00:00</p>
+        </div>
+    </aside>
+
+    <main id="app-content">
+        </main>
 </div>
-  </body>
+</body>
 </html>
