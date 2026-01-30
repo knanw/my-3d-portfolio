@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'; 
 import gsap from 'gsap';
-import screenImageUrl from '../public/bildschirm-foto.jpg';
+import screenImageUrl from '/bildschirm-foto.jpg';
 
 // --- SETUP ---
 const scene = new THREE.Scene();
