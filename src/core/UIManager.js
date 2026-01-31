@@ -70,6 +70,7 @@ export class UIManager {
         }
 
         this.container.innerHTML = htmlResult;
+        this.container.scrollTop = 0;
         gsap.fromTo(this.container, { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.4 });
     }
 
