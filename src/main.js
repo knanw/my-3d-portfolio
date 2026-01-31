@@ -196,40 +196,40 @@ if (deltaX < 5 && deltaY < 5) {
     }
 });
 
-function handleActualClick(event) {
+// function handleActualClick(event) {
 
-	if (event.target.closest('#monitor-ui')) return;
+// 	if (event.target.closest('#monitor-ui')) return;
 
-    const mouse = new THREE.Vector2(
-        (event.clientX / window.innerWidth) * 2 - 1,
-        -(event.clientY / window.innerHeight) * 2 + 1
-    );
-    const raycaster = new THREE.Raycaster();
-    raycaster.setFromCamera(mouse, camera);
-    const intersects = raycaster.intersectObjects(scene.children, true);
+//     const mouse = new THREE.Vector2(
+//         (event.clientX / window.innerWidth) * 2 - 1,
+//         -(event.clientY / window.innerHeight) * 2 + 1
+//     );
+//     const raycaster = new THREE.Raycaster();
+//     raycaster.setFromCamera(mouse, camera);
+//     const intersects = raycaster.intersectObjects(scene.children, true);
 
-    const hit = intersects[0]?.object;
-    const hitMonitor = hit?.userData.id === "monitor";
-    const hitDeskOrPlant = intersects.length > 0 && !hitMonitor;
+//     const hit = intersects[0]?.object;
+//     const hitMonitor = hit?.userData.id === "monitor";
+//     const hitDeskOrPlant = intersects.length > 0 && !hitMonitor;
 
-    // --- STRENGE STUFEN-LOGIK ---
-    if (zoomLevel === 1 && (hitMonitor || hitDeskOrPlant)) {
-        zoomLevel = 2;
-        goToTisch();
-    } 
-    else if (zoomLevel === 2 && hitMonitor) {
-        zoomLevel = 3;
-        goToMonitor();
-    }
-    else if (zoomLevel === 3 && !hitMonitor) {
-        zoomLevel = 2;
-        goToTisch();
-    }
-    else if (zoomLevel === 2 && !hitMonitor && !hitDeskOrPlant) {
-        zoomLevel = 1;
-        goToRaum();
-    }
-}
+//     // --- STRENGE STUFEN-LOGIK ---
+//     if (zoomLevel === 1 && (hitMonitor || hitDeskOrPlant)) {
+//         zoomLevel = 2;
+//         goToTisch();
+//     } 
+//     else if (zoomLevel === 2 && hitMonitor) {
+//         zoomLevel = 3;
+//         goToMonitor();
+//     }
+//     else if (zoomLevel === 3 && !hitMonitor) {
+//         zoomLevel = 2;
+//         goToTisch();
+//     }
+//     else if (zoomLevel === 2 && !hitMonitor && !hitDeskOrPlant) {
+//         zoomLevel = 1;
+//         goToRaum();
+//     }
+// }
 
 
 let isCameraMoving = false;
@@ -376,42 +376,6 @@ window.addEventListener('keydown', (e) => {
         handleBackStep();
     }
 });
-
-// --- INHALTE RENDERN ---
-window.renderAppContent = function(page) {
-    const container = document.getElementById('app-content');
-    
-    if (page === 'about') {
-        container.innerHTML = `
-            <div class="text-shadow-box">
-                <h1 style="border-bottom: 2px solid #0077b5; display: inline-block;">Lebenslauf</h1>
-                <p style="font-size: 1.2rem;"><b>Name:</b> Dein Name</p>
-                <p>Ich entwickle interaktive 3D-Welten. Hier siehst du, wie CSS-Transparenz und Three.js verschmelzen.</p>
-            </div>
-        `;
-    } 
-    else if (page === 'projects') {
-        container.innerHTML = `
-            <h1 class="text-shadow-box">Meine Projekte</h1>
-            <div class="tile-grid">
-                <div class="project-tile"><h3>3D Office</h3><p>Die Szene, die du gerade siehst.</p></div>
-                <div class="project-tile"><h3>Glass UI</h3><p>Transparentes Interface Design.</p></div>
-                <div class="project-tile"><h3>GSAP Magic</h3><p>Flüssige Kamera-Fahrten.</p></div>
-                <div class="project-tile"><h3>Three.js</h3><p>Web-basierte Grafik-Engine.</p></div>
-            </div>
-        `;
-    }else if (page === 'contact') {
-            container.innerHTML = `
-                <h1 style="margin-bottom: 30px;">Let's Connect</h1>
-                <p style="margin-bottom: 40px;">Wähle eine Plattform für Details:</p>
-                <a href="#" class="icon-link icon-github">GitHub</a>
-                <a href="#" class="icon-link icon-linkedin">LinkedIn</a>
-                <a href="#" class="icon-link icon-email">Email</a>
-            `;
-        }
-        gsap.to(container, { opacity: 1, x: 0, duration: 0.4 });
-
-};
 
 // --- LIVE UHRZEIT ---
 function updateClock() {
