@@ -14,10 +14,10 @@ body { margin: 0; }
     background: rgba(15, 15, 15, 0.3); 
     backdrop-filter: blur(12px); 
     border: 1px solid rgba(255, 255, 255, 0.1); 
-    width: 80vw; 
-    max-width: 1000px;
-    height: 50vw;
-    max-height: 600px; 
+    width: 88vw; 
+    max-width: 1200px;
+    height: 65vw;
+    max-height: 750px;
     overflow: hidden; 
     z-index: 100;
     transition: opacity 0.5s ease-in-out;
@@ -93,10 +93,10 @@ body { margin: 0; }
     background: rgba(20, 20, 20, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    padding: 2rem;
+    padding: 1.5rem;
     backdrop-filter: blur(10px);
     transition: transform 0.3s ease;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Wenn die Kachel die Klasse 'active' bekommt */
@@ -172,4 +172,42 @@ body { margin: 0; }
     color: #ffffff;
     text-shadow: 0 0 5px rgba(0, 119, 181, 0.5);
     margin: 0;
+}
+
+.controls-guide {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(221, 225, 231, 0.8); /* Dein Hintergrund-Grau mit Transparenz */
+    padding: 15px;
+    border-radius: 12px;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #444;
+    box-shadow: 5px 5px 10px #b8b9be, -5px -5px 10px #ffffff;
+    pointer-events: none; /* Stört nicht beim Klicken in der Scene */
+    z-index: 100;
+}
+
+.guide-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.guide-item:last-child { margin-bottom: 0; }
+
+.key {
+    background: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin-right: 10px;
+    font-weight: bold;
+    box-shadow: 1px 1px 0px #fff inset;
+}
+
+.mouse-icon {
+    margin-right: 10px;
+    font-size: 16px;
 }
