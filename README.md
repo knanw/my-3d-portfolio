@@ -5,7 +5,7 @@
 
 
 <div align="center">
-    <a href="https://developer.mozilla.org/de/docs/Web/JavaScript"><img src="https://img.shields.io/badge/with%20a%20logo-grey?style=for-the-badge&logo=javascript&logoColor=ffdd54" /></a>
+    <a href="https://developer.mozilla.org/de/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript?style=for-the-badge&logo=javascript&logoColor=yellow" /></a>
       <!-- <a href="https://numpy.org"><img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" /></a>
     <a href="https://pandas.pydata.org"><img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" /></a>
     <a href="https://www.scipy.org"><img src="https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white" /></a>
@@ -17,3 +17,4 @@
     <a href="https://streamlit.io"><img src="https://img.shields.io/badge/Streamlit-%235F4690.svg?style=for-the-badge&logo=streamlit&logoColor=white" /></a> -->
 </div>
 <br>
+
