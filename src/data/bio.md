@@ -6,23 +6,23 @@ name: "Wolfram"
 ## Machine Learning Engineer | Senior SW Consultant
 
 ### PROFESSIONAL SUMMARY  
-Certified Machine Learning Engineering and Senior Software Consultant with 10+ years of experience in Fullstack and Cloud-native infrastructures. (Java, Go, Node.js, TypeScript) I combine deep expertise in scalable backend systems with advanced knowledge in MLOps, RAG architectures, and Computer Vision. Proven track record in automating complex development lifecycles, now focused on deploying high-performance AI models and robust data pipelines.
+Certified Machine Learning Engineer and Senior Software Consultant with 10+ years of experience in Full-Stack development and cloud-native infrastructures. I combine deep expertise in scalable backend systems (Python, Java, Go, Node.js, TypeScript) with advanced knowledge in MLOps, RAG architectures, and Computer Vision. With a proven track record in automating complex development lifecycles, I am now focused on deploying high-performance AI models and robust data pipelines.
 
 
 ### WORK EXPERIENCE  
 Professional Sabbatical & AI Transformation  
 Liora, Sorbonne University Paris | 2024.10 - 2026.04  
-- Deep Learning & CV: Engineered Object Detection and Classification models using Neural Networks, PyTorch, TensorFlow and Keras.
-- Data Science: Developed a Hybrid Recommendation System; drove end-to-end data preprocessing and feature engineering.
-- Evaluation & Viz: Analyzed performance via Precision-Recall, F1-Score, and Confusion Matrices; visualized complex training dynamics.
-- MLOps & GenAI: Deployed RAG architectures, LLM pipelines, and Agentic AI (LangChain) using MLFlow, ZenML, and Vector DBs.
+- Spearheaded Deep Learning & CV projects: Architected and trained high-precision Object Detection and Classification models using PyTorch and TensorFlow/Keras.
+- Engineered a Hybrid Recommendation System: Drove the entire data lifecycle from complex preprocessing to advanced feature engineering.
+- Optimized Model Performance: Conducted rigorous evaluations using Precision-Recall and F1-Score; implemented visualization tools to track and improve training dynamics.
+- Architected MLOps & GenAI Pipelines: Deployed scalable RAG systems and Agentic AI (LangChain) workflows, integrating MLFlow, ZenML, and Vector Databases for production readiness.
 
 Senior Software Consultant  
 Geek In Business Karlshuld, Germany | 2021.09 - 2025.09  
-- Platform Engineering (Go/Backstage.io): Engineered self-service ootstrapping tool using Go and GitHub Actions to automate standardized microservice generation, eliminating manual infrastructure setup and standardizing CI/CD provisioning (K8s/Tekton).
-- Legacy Modernization & Cloud-Native Full-Stack Development: Implemented a Costume Rental Management system and manufacturing order processing system as well as creating frontends using Vue.js, JakartaEE (Quarkus), complete replacement of a legacy system with a new platform into a modern and scalable Docker/Linux environment.
+- Platform Engineering (Go/Backstage.io): Engineered self-service bootstrapping tool using Go and GitHub Actions to automate standardized microservice generation, eliminating manual infrastructure setup and standardizing CI/CD provisioning (K8s/Tekton).
+- Legacy Modernization & Cloud-Native Fullstack Development: Implemented a Costume Rental Management system and manufacturing order processing system as well as creating frontends using Vue.js, JakartaEE (Quarkus), complete replacement of a legacy system with a new platform into a modern and scalable Docker/Linux environment.
 - Data & Legacy Migration: Led a database migration from PostgreSQL to SQL Server and refactored core Product Information Systems, achieving measurable gains in data processing speed and reducing operational costs for data managers.
-- Observability & Data Visualization: Developed custom Backstage.io plugins (React/Node.js) to automate Scrum reporting and interactive Technology Radars (D3.js), centralizing data from Jira, Prometheus, and NexusIQ to enhance cross-team transparency and reducing manaul reporting effort for stakeholders.
+- Observability & Data Visualization: Developed custom Backstage.io plugins (React/Node.js) to automate Scrum reporting and interactive Technology Radars (D3.js), centralizing data from Jira, Prometheus, and NexusIQ to enhance cross-team transparency and reducing manual reporting effort for stakeholders.
 
 SAP SW Engineer (EWM, SD/MM, IS-H, FI) | 2017.01 - 2021.03
 - ProSiebenSat.1, Munich, Germany
@@ -30,7 +30,7 @@ SAP SW Engineer (EWM, SD/MM, IS-H, FI) | 2017.01 - 2021.03
 - Oettinger Davidoff, Basel, Switzerland
 - Cerner(Oracle), Berlin, Germany
 
-Various internships during the study of Applied Informatics (programming)  
+Various internships during my study of Applied Informatics (programming)  
 2013.03 - 2016.09
 - Microsoft NAV, Hermes, Shanghai, China (3-months)
 - MS Microsoft, QUIBIQ, Stuttgart
@@ -47,8 +47,8 @@ CA Technologies (Broadcom), Barcelona, Spain | 2011.10 - 2012.05
 Webdesign Internship and language study  
 Machinas, Barcelona, Spain | 2010.06 - 2011.09
 
-Civilian service   
-Clinical Center, Regensburg | 2004.08 - 2005.04
+Civilian service
+Clinical Center, Regensburg, Germany | 2004.08 - 2005.04
   
   
 ### EDUCATION  
@@ -60,9 +60,9 @@ B.Sc. Applied Informatics
 University of Applied Sciences, Berlin | 2013.04 - 2016.11
 - Focus: Software Engineering, Distributed Systems
 - Scholarship Polytechnic University Porto, Portugal
-- 3.price Microsoft Hackathon
+- 3rd Price Microsoft Hackathon
 
-Diplom Visual Arts (Univ.)  
+Diploma Visual Arts
 Academy of Fine Arts, Nuremberg | 2006.10 - 2009.03
 - Scholarships University of Applied Arts Vienna, Austria
 
@@ -84,8 +84,8 @@ Fachhochschulreife (Abitur) | Fachoberschule Regensburg | 2001.09 - 2003.07
     - Cloud ML: AWS MLOps (SageMaker), Scalable Inference Pipelines.  
 
 - Backend & Infrastructure  
-    - Languages: Python, Java (Quarkus, JakartaEE), Go (Gin), Node.js (Express.js), TypeScript (Vue.js, React), Rust, ABAP
-    - Cloud & DevOps: AWS (Certified Cloud Practitioner), Kubernetes (K8s), Docker, Tekton, GitHub Actions, Jenkins, AWS.
+    - Languages: Python, Java (Quarkus, JakartaEE), Go (Gin), Node.js (Express.js), TypeScript (Vue.js, React), C/C++, Rust, ABAP
+    - Cloud & DevOps: AWS (Certified Cloud Practitioner), Kubernetes (K8s), Docker, Tekton, GitHub Actions, Jenkins.
     - SRE & Observability: Prometheus, Grafana, NexusIQ, Bash-Scripting, Kafka. 
 
 - Databases & Enterprise Ecosystem   
