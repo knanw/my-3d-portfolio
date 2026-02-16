@@ -4183,7 +4183,7 @@ Please report this to https://github.com/markedjs/marked.`,e){const r="<p>An err
     </div>
     <div class="project-body">
         {{content}} </div>
-</div>`,tA=`name: "Wolfram KNan"
+</div>`,tA=`name: "Wolfram Knan"
 title: "Certified Machine Learning Engineer | Senior SW Consultant"
 location: "Germany"
 github: "https://github.com/knanw"
