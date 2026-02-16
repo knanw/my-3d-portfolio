@@ -4187,8 +4187,9 @@ Please report this to https://github.com/markedjs/marked.`,e){const r="<p>An err
 title: "Certified Machine Learning Engineer | Senior SW Consultant"
 location: "Germany"
 github: "https://github.com/knanw"
-linkedin: "https://linkedin.com/in/knan"
-firefox: "knanw@outlook.com"`,nA=`---
+linkedin: "https://linkedin.com/in/knanw"
+firefox: "knanw@outlook.com"
+`,nA=`---
 title: "About me"
 name: "Wolfram"
 ---
