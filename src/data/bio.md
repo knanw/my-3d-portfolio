@@ -10,8 +10,8 @@ Certified Machine Learning Engineer and Senior Software Consultant with 10+ year
 
 
 ### WORK EXPERIENCE  
-Professional Sabbatical & AI Transformation  
-Liora, Sorbonne University Paris | 2024.10 - 2026.04  
+AI Transformation  
+Liora, Sorbonne University Paris | 2024.10 - 2026.05 
 - Spearheaded Deep Learning & CV projects: Architected and trained high-precision Object Detection and Classification models using PyTorch and TensorFlow/Keras.
 - Engineered a Hybrid Recommendation System: Drove the entire data lifecycle from complex preprocessing to advanced feature engineering.
 - Optimized Model Performance: Conducted rigorous evaluations using Precision-Recall and F1-Score; implemented visualization tools to track and improve training dynamics.
@@ -84,7 +84,7 @@ Fachhochschulreife (Abitur) | Fachoberschule Regensburg | 2001.09 - 2003.07
     - Cloud ML: AWS MLOps (SageMaker), Scalable Inference Pipelines.  
 
 - Backend & Infrastructure  
-    - Languages: Python, Java (Quarkus, JakartaEE), Go (Gin), Node.js (Express.js), TypeScript (Vue.js, React), C/C++, Rust, ABAP
+    - Languages: Python, Java (Quarkus, JakartaEE), Go (Gin), Node.js (Express.js), TypeScript (Vue.js, React), C/C++, Rust, ABAP OO
     - Cloud & DevOps: AWS (Certified Cloud Practitioner), Kubernetes (K8s), Docker, Tekton, GitHub Actions, Jenkins.
     - SRE & Observability: Prometheus, Grafana, NexusIQ, Bash-Scripting, Kafka. 
 
